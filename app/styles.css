@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light;
+}
+
+html, body, [class*="css"] {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.stApp {
+  background: linear-gradient(135deg, #f8fbff 0%, #f4f7fb 45%, #eef3ff 100%);
+}
+
+.block-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  max-width: 1400px;
+}
+
+[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border-right: 1px solid #e5e7eb;
+}
+
+.main-card {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 1.3rem;
+  backdrop-filter: blur(12px);
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  border-radius: 28px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 24px 60px rgba(37, 99, 235, 0.25);
+}
+
+.feature-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  margin: 0.3rem 0.35rem 0.3rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.preview-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.06);
+}
+
+.result-card {
+  border-radius: 24px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+}
+
+.result-live {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.14) 0%, rgba(255,255,255,0.95) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.18);
+}
+
+.result-spoof {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.14) 0%, rgba(255,255,255,0.95) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+}
+
+.metric-tile {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 0.95rem 1rem;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+}
+
+.stButton > button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.22);
+}
+
+.stButton > button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(37, 99, 235, 0.28);
+}
+
+.stDownloadButton > button,
+.stFileUploader > label,
+.stCameraInput > label {
+  border-radius: 16px;
+}
+
+div[data-testid="stStatusWidget"] {
+  border-radius: 12px;
+}

@@ -1,0 +1,10 @@
+services:
+  face-liveness:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_HOST=0.0.0.0
+      - STREAMLIT_PORT=8501
+    volumes:
+      - .:/app
