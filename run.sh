@@ -3,6 +3,10 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+if [ -d ".venv" ]; then
+  source .venv/bin/activate
+fi
+
 case "${1:-}" in
   webcam)
     python3 -m src.webcam_test
